@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', 'IBM Plex Sans', sans-serif;
+  --font-body-md: 'Plus Jakarta Sans', sans-serif;
+  --font-body-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-md: 'Plus Jakarta Sans', sans-serif;
+  --font-display-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-title-sm: 'Plus Jakarta Sans', sans-serif;
+  --font-label-bold: 'Plus Jakarta Sans', sans-serif;
+  --font-data-tabular: 'Plus Jakarta Sans', sans-serif;
+
+  --color-background: #f8fafc;
+  --color-on-background: #0f172a;
+
+  --color-surface: #ffffff;
+  --color-surface-dim: #f1f5f9;
+  --color-surface-bright: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f8fafc;
+  --color-surface-container: #f1f5f9;
+  --color-surface-container-high: #e2e8f0;
+  --color-surface-container-highest: #cbd5e1;
+  --color-surface-variant: #e2e8f0;
+  --color-surface-tint: #005963;
+
+  --color-on-surface: #0f172a;
+  --color-on-surface-variant: #475569;
+
+  /* Apollo Signature Healthcare Teal */
+  --color-primary: #005963;
+  --color-primary-container: #086b77;
+  --color-primary-fixed: #ccf1f4;
+  --color-primary-fixed-dim: #9fe2e8;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #e6f7f8;
+  --color-on-primary-fixed: #002226;
+  --color-on-primary-fixed-variant: #004b54;
+
+  /* Apollo Signature Warm Orange */
+  --color-secondary: #e65c00;
+  --color-secondary-container: #ea580c;
+  --color-secondary-fixed: #ffe2ce;
+  --color-secondary-fixed-dim: #ffc29b;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #fff4ed;
+  --color-on-secondary-fixed: #3d1400;
+  --color-on-secondary-fixed-variant: #7a2b00;
+
+  --color-tertiary: #334155;
+  --color-tertiary-container: #475569;
+  --color-tertiary-fixed: #e2e8f0;
+  --color-tertiary-fixed-dim: #cbd5e1;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #f1f5f9;
+  --color-on-tertiary-fixed: #0f172a;
+  --color-on-tertiary-fixed-variant: #334155;
+
+  --color-error: #dc2626;
+  --color-error-container: #fee2e2;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #991b1b;
+
+  --color-inverse-surface: #0a2529;
+  --color-inverse-on-surface: #f0fdfa;
+  --color-inverse-primary: #5eead4;
+
+  --color-outline: #64748b;
+  --color-outline-variant: #cbd5e1;
+
+  --color-patient-accent: #ea580c;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8f9ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #bec9c8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6e7979;
+}
